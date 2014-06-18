@@ -24,11 +24,11 @@ end
       "job:" => @job
     }.each do |pair|
     @db.execute "insert into bots values ( ?, ?,? )", pair
-    puts "Your bot has been added..."
   end
 end
 #Showing inserted bots data and asks to show all bots.
   def view
+    puts "Your bot has been added..."
     puts "His name is #{@name} and his age is #{@age} and his job is #{@job}"
     sleep 3
     puts "Would you like to list all the bots?"
